@@ -19,3 +19,6 @@ mtcars %>%
 mtcars %>%
   select(gear, mpg, hp, cyl, am) %>%
   explore_all(target = gear)
+
+mtcars %>%
+  explain_tree(target = highmpg)
